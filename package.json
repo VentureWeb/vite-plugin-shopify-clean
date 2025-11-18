@@ -27,7 +27,8 @@
     "dev": "npm run build -- --watch",
     "build": "tsup src/index.ts --dts --format cjs,esm",
     "watch": "tsup src/index.ts --dts --format cjs,esm --watch",
-    "lint": "eslint **/*.{t,j}s --fix"
+    "lint": "eslint **/*.{t,j}s --fix",
+    "prepare": "npm run build"
   },
   "peerDependencies": {
     "vite": "^5.0.0 || ^6.0.0"
